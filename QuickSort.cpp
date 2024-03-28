@@ -67,5 +67,11 @@ void q_short(int low, int high)
     }
     cmp_count++;
     if (i < j) // step 9
-
+    {
+        //swap the element at index i whit the element at index j
+        swap(i, j);
+    }
 }
+
+//recursive call to sort the left sub array
+q_shorth(low, j - 1); //step 12
